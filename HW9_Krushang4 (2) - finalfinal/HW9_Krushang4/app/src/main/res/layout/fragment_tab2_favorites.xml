@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab2_favorites">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favouriteCycler"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="10sp"
+        android:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/favoritecard"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/black"
+            android:foregroundGravity="center"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Favorites Available"
+                android:textColor="@color/green"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

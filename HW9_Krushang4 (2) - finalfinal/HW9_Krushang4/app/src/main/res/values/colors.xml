@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#03C844</color>
+    <color name="blue">#007FD5</color>
+    <color name="red">#D50000</color>
+    <color name="grey">#B5B5B5</color>
+    <color name="orange">#FF882C</color>
+    <color name="placeholderwhite">#66FFFFFF</color>
+    <color name="progress_bar_color">#7A1E16</color>
+    <color name="progress_track_color">#2C2020</color>
+
+
+</resources>

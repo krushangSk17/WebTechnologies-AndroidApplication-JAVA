@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selector for items that are not selected -->
+    <item android:color="#FFFFFF" android:state_enabled="true" android:state_pressed="false"
+        android:state_selected="false" android:state_focused="false"
+        android:drawable="@color/black"/>
+
+    <!-- Selector for items that are selected -->
+    <item android:color="#FFFFFF" android:state_enabled="true" android:state_pressed="false"
+        android:state_selected="true" android:state_focused="false"
+        android:drawable="@color/white"/>
+
+    <!-- Selector for items that are pressed -->
+    <item android:color="#FFFFFF" android:state_enabled="true" android:state_pressed="true"
+        android:drawable="@color/white"/>
+
+</selector>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab1_search">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#000000"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="280dp"
+                android:text="Keyword*"
+                android:textColor="@color/green"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/editTextText"-->
+
+            <!--                android:layout_width="345dp"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:backgroundTint="@color/green"-->
+            <!--                android:ems="10"-->
+            <!--                android:hint="Enter the Keyword"-->
+            <!--                android:inputType="text"-->
+
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textColorHint="@color/placeholderwhite"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
+
+            <AutoCompleteTextView
+                android:id="@+id/search_input"
+                android:layout_width="345dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/green"
+                android:ems="10"
+                android:text="Ed sheeran"
+                android:hint="Enter the Keyword"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/placeholderwhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Distance (Miles)*"
+                android:textColor="@color/green"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/search_input" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="345dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+
+                android:backgroundTint="@color/green"
+                android:ems="10"
+                android:hint="10"
+                android:inputType="number"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textColorHint="@color/placeholderwhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                tools:text="10" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Category*"
+                android:textColor="@color/green"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="345dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/green"
+                android:dropDownSelector="@drawable/spinner_selector"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Location*"
+                android:textColor="@color/green"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Auto-Detect"
+                android:textColor="@color/white"
+                android:thumbTint="@color/white"
+                android:trackTint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.81"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="345dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/green"
+                android:ems="10"
+                android:hint="Enter the Location"
+                android:text="san fransisco"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/placeholderwhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="SEARCH"
+                app:cornerRadius="8dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                android:backgroundTint="@color/green" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="@color/orange"
+                android:text="CLEAR"
+                app:cornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/switch1"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+            <ProgressBar
+                android:id="@+id/progressBarPopular"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:backgroundTint="@color/green"
+                android:foregroundTint="@color/green"
+                android:indeterminateTint="@color/green"
+                android:outlineAmbientShadowColor="@color/green"
+
+                android:outlineSpotShadowColor="@color/green"
+                android:progressBackgroundTint="@color/green"
+                android:progressTint="@color/green"
+                android:secondaryProgressTint="@color/green"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/search_input"
+                app:layout_constraintEnd_toEndOf="@+id/search_input"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/search_input"
+                app:layout_constraintTop_toTopOf="@+id/search_input"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <!-- Define the spinner options in a string array resource -->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
